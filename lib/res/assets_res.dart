@@ -8,17 +8,20 @@ class AssetsRes {
 
   static const String PROJECT_NAME = 'facebook';
   static const String PROJECT_VERSION = '1.0.0+1';
-  static const String FACEBOOK = 'assets/Facebook.png';
-  static const String MESSENGER = 'assets/Messenger.png';
-  static const String NOTIFICATION = 'assets/Notification.png';
-  static const String PHOTOS = 'assets/Photos.png';
-  static const String PLUS = 'assets/Plus.png';
-  static const String PROFILE = 'assets/Profile.png';
-  static const String SEARCH = 'assets/Search.png';
-  static const String STORE = 'assets/Store.png';
-  static const String STORY_IMAGE_1 = 'assets/Story_Image_1.png';
-  static const String BRANDING = 'assets/branding.png';
-  static const String HOME = 'assets/home.png';
-  static const String REELS = 'assets/reels.png';
-  static const String USER_IMAGE = 'assets/user_image.png';
+  static const String FACEBOOK = 'assets/images/Facebook.png';
+  static const String MESSENGER = 'assets/images/Messenger.png';
+  static const String NOTIFICATION = 'assets/images/Notification.png';
+  static const String PHOTOS = 'assets/images/Photos.png';
+  static const String PLUS = 'assets/images/Plus.png';
+  static const String PROFILE = 'assets/images/Profile.png';
+  static const String SEARCH = 'assets/images/Search.png';
+  static const String STORE = 'assets/images/Store.png';
+  static const String STORY_IMAGE_1 = 'assets/images/Story_Image_1.png';
+  static const String BRANDING = 'assets/images/branding.png';
+  static const String FACEBOOKBRANDING = 'assets/images/facebookBranding.png';
+  static const String FACEBOOKLOGO = 'assets/images/facebookLogo.png';
+  static const String HOME = 'assets/images/home.png';
+  static const String LOGO = 'assets/images/logo.png';
+  static const String REELS = 'assets/images/reels.png';
+  static const String USER_IMAGE = 'assets/images/user_image.png';
 }
