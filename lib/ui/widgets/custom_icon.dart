@@ -7,7 +7,7 @@ class CustomIcon extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(right: 12),
-      child: Image.asset('assets/$imageName.png'),
+      child: Image.asset('assets/images/$imageName.png'),
     );
   }
 

@@ -89,16 +89,19 @@ flutter:
   # see https://flutter.dev/to/font-from-package
   assets:
     - assets/
-    - assets/Facebook.png
-    - assets/Messenger.png
-    - assets/Notification.png
-    - assets/Photos.png
-    - assets/Plus.png
-    - assets/Profile.png
-    - assets/Search.png
-    - assets/Store.png
-    - assets/Story_Image_1.png
-    - assets/branding.png
-    - assets/home.png
-    - assets/reels.png
-    - assets/user_image.png
+    - assets/images/Facebook.png
+    - assets/images/Messenger.png
+    - assets/images/Notification.png
+    - assets/images/Photos.png
+    - assets/images/Plus.png
+    - assets/images/Profile.png
+    - assets/images/Search.png
+    - assets/images/Store.png
+    - assets/images/Story_Image_1.png
+    - assets/images/branding.png
+    - assets/images/facebookBranding.png
+    - assets/images/facebookLogo.png
+    - assets/images/home.png
+    - assets/images/logo.png
+    - assets/images/reels.png
+    - assets/images/user_image.png

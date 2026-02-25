@@ -11,19 +11,19 @@ class HomeScreen extends StatelessWidget {
       length: 6,
       child: Scaffold(
         appBar: AppBar(
-          title: Image.asset('assets/Facebook.png'),
+          title: Image.asset('assets/images/Facebook.png'),
           actions: [
             CustomIcon(imageName: 'Plus'),
             CustomIcon(imageName: 'Search'),
             CustomIcon(imageName: 'Messenger'),
           ],
           bottom: TabBar(
-            tabs: [Tab(child: Image.asset('assets/home.png')),
-              Tab(child: Image.asset('assets/reels.png')),
-              Tab(child: Image.asset('assets/Store.png')),
-              Tab(child: Image.asset('assets/Profile.png')),
-              Tab(child: Image.asset('assets/Notification.png')),
-              Tab(child: Image.asset('assets/user_image.png')),
+            tabs: [Tab(child: Image.asset('assets/images/home.png')),
+              Tab(child: Image.asset('assets/images/reels.png')),
+              Tab(child: Image.asset('assets/images/Store.png')),
+              Tab(child: Image.asset('assets/images/Profile.png')),
+              Tab(child: Image.asset('assets/images/Notification.png')),
+              Tab(child: Image.asset('assets/images/user_image.png')),
             ],
           ),
         ),
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset(width: 43,height: 43,fit: BoxFit.fill,'assets/user_image.png'),
+                          Image.asset(width: 43,height: 43,fit: BoxFit.fill,'assets/images/user_image.png'),
                           Expanded(
                             child: TextField(
                               decoration: InputDecoration(
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Image.asset('assets/Photos.png'),
+                          Image.asset('assets/images/Photos.png'),
                         ],
                       ),
 
@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                         itemBuilder: (context,index) {
                         return Stack(
                               children: [
-                                Image.asset('assets/Story_Image_1.png'),
+                                Image.asset('assets/images/Story_Image_1.png'),
                               ],
                             );
                         }
