@@ -23,5 +23,6 @@ class AssetsRes {
   static const String HOME = 'assets/images/home.png';
   static const String LOGO = 'assets/images/logo.png';
   static const String REELS = 'assets/images/reels.png';
+  static const String MAIN_SVG_LOGO = 'assets/images/svg/main_svg_logo.svg';
   static const String USER_IMAGE = 'assets/images/user_image.png';
 }

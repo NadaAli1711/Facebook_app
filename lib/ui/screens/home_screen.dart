@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/custom_icon.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String routeName = 'homeScreen';
   const HomeScreen({super.key});
 
   @override
