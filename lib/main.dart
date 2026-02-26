@@ -1,5 +1,8 @@
 import 'package:facebook/ui/screens/home_screen.dart';
+import 'package:facebook/ui/screens/login_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'core/utils/app_colors.dart';
 
 
 void main(){
@@ -11,9 +14,20 @@ class Facebook extends StatelessWidget {
   const Facebook({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
     debugShowCheckedModeBanner: false,
-    home:HomeScreen(),
+    theme: ThemeData(
+      textSelectionTheme: TextSelectionThemeData(
+        selectionHandleColor: Colors.transparent,
+        cursorColor: AppColors.grey,
+        selectionColor:AppColors.lightGrey
+      )
+    ),
+    initialRoute:LoginScreen.routeName ,
+      routes:{
+        HomeScreen.routeName : (context) => const HomeScreen(),
+        LoginScreen.routeName: (context) => const LoginScreen(),
+      } ,
 );
   }
 }
