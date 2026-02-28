@@ -10,13 +10,15 @@ class FacebookElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    double designHeight = 852;
     return ElevatedButton(onPressed: onPressed??(){},style: ElevatedButton.styleFrom(
       backgroundColor: isLogin ? AppColors.blue : AppColors.white,
-      minimumSize: Size.fromHeight(50),
+      minimumSize: Size.fromHeight((50/designHeight)*height),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadiusGeometry.circular(16),
         side: BorderSide(color: AppColors.blue)
       )
-    ), child: Text(text,style: isLogin ? AppStyles.loginButtonStyle : AppStyles.createAccountButtonStyle),);
+    ), child: Text(text,style: isLogin ? AppStyles.white16Regular : AppStyles.blue16Regular),);
   }
 }

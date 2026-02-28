@@ -1,5 +1,8 @@
+import 'package:facebook/core/utils/app_assets.dart';
+import 'package:facebook/ui/widgets/home_tab.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
+import '../../core/utils/app_colors.dart';
 import '../widgets/custom_icon.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,77 +11,42 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
+    double designWidth = 393;
     return DefaultTabController(
       length: 6,
       child: Scaffold(
         appBar: AppBar(
-          title: Image.asset('assets/images/Facebook.png'),
+          backgroundColor: AppColors.white,
+          title: SvgPicture.asset(AppSvg.facebookIcon),
           actions: [
-            CustomIcon(imageName: 'Plus'),
-            CustomIcon(imageName: 'Search'),
-            CustomIcon(imageName: 'Messenger'),
+            CustomIcon(imageName: AppSvg.plusIcon,paddingRight: 12,),
+            CustomIcon(imageName: AppSvg.searchIcon,paddingRight: 12,),
+            CustomIcon(imageName: AppSvg.messengerIcon,paddingRight: 12,),
           ],
           bottom: TabBar(
-            tabs: [Tab(child: Image.asset('assets/images/home.png')),
-              Tab(child: Image.asset('assets/images/reels.png')),
-              Tab(child: Image.asset('assets/images/Store.png')),
-              Tab(child: Image.asset('assets/images/Profile.png')),
-              Tab(child: Image.asset('assets/images/Notification.png')),
-              Tab(child: Image.asset('assets/images/user_image.png')),
+            tabs: [
+              Tab(child: SvgPicture.asset(AppSvg.homeIcon)),
+              Tab(child: SvgPicture.asset(AppSvg.reelsIcon)),
+              Tab(child: SvgPicture.asset(AppSvg.storeIcon)),
+              Tab(child: SvgPicture.asset(AppSvg.profileIcon)),
+              Tab(child: SvgPicture.asset(AppSvg.notificationIcon)),
+              // Tab(child: SvgPicture.asset(AppSvg.profileImageIcon)),
+              Tab(child: CircleAvatar(backgroundImage:AssetImage(AppImages.messiImage,),radius: ((31/2)/designWidth)*width,),),
             ],
           ),
         ),
 
-        body: Column(
-            children: [
-              Expanded(
-                child: TabBarView(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(right: 15,left: 11,top: 18,bottom: 24),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(width: 43,height: 43,fit: BoxFit.fill,'assets/images/user_image.png'),
-                          Expanded(
-                            child: TextField(
-                              decoration: InputDecoration(
-                                hintText: 'What’s in Your Mind?',
-                                contentPadding: EdgeInsets.only(left: 10),
-                                border: InputBorder.none
-                              ),
-                            ),
-                          ),
-                          Image.asset('assets/images/Photos.png'),
-                        ],
-                      ),
-
-                    ),
-                   Expanded(child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                        itemCount: 3,
-                        itemBuilder: (context,index) {
-                        return Stack(
-                              children: [
-                                Image.asset('assets/images/Story_Image_1.png'),
-                              ],
-                            );
-                        }
-                   )
-                        ),
-                    // Center(child: Text("It's rainy here")),
-                    // Center(child: Text("It's sunny here")),
-                    // Center(child: Text("It's cloudy here")),
-                    // Center(child: Text("It's rainy here")),
-                    // Center(child: Text("It's sunny here")),
-                  ],
-                ),
-              ),
-            ],
-
-          ),
-
-
+        body: TabBarView(
+          children: [
+           HomeTab(),
+            Center(child: Text("It's Reels Tab Here")),
+            Center(child: Text("It's Store Tab Here")),
+            Center(child: Text("It's Profile Tab Here")),
+            Center(child: Text("It's Notification Tab Here")),
+            Center(child: Text("It's Information Tab Here")),
+          ],
+        ),
       ),
     );
   }

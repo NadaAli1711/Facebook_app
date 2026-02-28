@@ -16,11 +16,11 @@ class Facebook extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
-    theme: ThemeData(
+    theme: ThemeData(scaffoldBackgroundColor: AppColors.white,
       textSelectionTheme: TextSelectionThemeData(
-        selectionHandleColor: Colors.transparent,
+        selectionHandleColor: AppColors.transparent,
         cursorColor: AppColors.grey,
-        selectionColor:AppColors.lightGrey
+        selectionColor:AppColors.lightGrey,
       )
     ),
     initialRoute:LoginScreen.routeName ,

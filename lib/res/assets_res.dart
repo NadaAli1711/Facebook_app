@@ -8,21 +8,19 @@ class AssetsRes {
 
   static const String PROJECT_NAME = 'facebook';
   static const String PROJECT_VERSION = '1.0.0+1';
-  static const String FACEBOOK = 'assets/images/Facebook.png';
-  static const String MESSENGER = 'assets/images/Messenger.png';
-  static const String NOTIFICATION = 'assets/images/Notification.png';
-  static const String PHOTOS = 'assets/images/Photos.png';
-  static const String PLUS = 'assets/images/Plus.png';
-  static const String PROFILE = 'assets/images/Profile.png';
-  static const String SEARCH = 'assets/images/Search.png';
-  static const String STORE = 'assets/images/Store.png';
-  static const String STORY_IMAGE_1 = 'assets/images/Story_Image_1.png';
-  static const String BRANDING = 'assets/images/branding.png';
-  static const String FACEBOOKBRANDING = 'assets/images/facebookBranding.png';
-  static const String FACEBOOKLOGO = 'assets/images/facebookLogo.png';
-  static const String HOME = 'assets/images/home.png';
-  static const String LOGO = 'assets/images/logo.png';
-  static const String REELS = 'assets/images/reels.png';
-  static const String MAIN_SVG_LOGO = 'assets/images/svg/main_svg_logo.svg';
-  static const String USER_IMAGE = 'assets/images/user_image.png';
+  static const String FACEBOOK_IMG = 'assets/images/Facebook_img.png';
+  static const String PHOTOS_IMG = 'assets/images/Photos_img.png';
+  static const String PROFILE_IMG = 'assets/images/Profile_img.png';
+  static const String STORY_IMG = 'assets/images/Story_img.png';
+  static const String BRANDING_IMG = 'assets/images/branding_img.png';
+  static const String CHAT_DOTS_IMG = 'assets/images/chat_dots_img.png';
+  static const String FACEBOOKBRANDING_IMG = 'assets/images/facebookBranding_img.png';
+  static const String FACEBOOKLOGO_IMG = 'assets/images/facebookLogo_img.png';
+  static const String HOME_IMG = 'assets/images/home_img.png';
+  static const String LOGO_IMG = 'assets/images/logo_img.png';
+  static const String MESSI = 'assets/images/messi.png';
+  static const String ROUTE_IMG = 'assets/images/route_img.png';
+  static const String ROUTE_PROFILE = 'assets/images/route_profile.png';
+  static const String MAIN_SVG_LOGO = 'assets/svg/main_svg_logo.svg';
+  static const String META_LOGO = 'assets/svg/meta_logo.svg';
 }
