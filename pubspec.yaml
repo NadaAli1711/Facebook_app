@@ -90,21 +90,20 @@ flutter:
   # see https://flutter.dev/to/font-from-package
   assets:
     - assets/images/
-    - assets/images/Facebook.png
-    - assets/images/Messenger.png
-    - assets/images/Notification.png
-    - assets/images/Photos.png
-    - assets/images/Plus.png
-    - assets/images/Profile.png
-    - assets/images/Search.png
-    - assets/images/Store.png
-    - assets/images/Story_Image_1.png
-    - assets/images/branding.png
-    - assets/images/facebookBranding.png
-    - assets/images/facebookLogo.png
-    - assets/images/home.png
-    - assets/images/logo.png
-    - assets/images/reels.png
-    - assets/images/svg/main_svg_logo.svg
-    - assets/images/user_image.png
-    - assets/images/svg/meta_logo.svg
+    - assets/images/Facebook_img.png
+    - assets/images/Photos_img.png
+    - assets/images/Profile_img.png
+    - assets/images/Story_img.png
+    - assets/images/branding_img.png
+    - assets/images/chat_dots_img.png
+    - assets/images/facebookBranding_img.png
+    - assets/images/facebookLogo_img.png
+    - assets/images/home_img.png
+    - assets/images/logo_img.png
+    - assets/images/messi.png
+    - assets/images/route_img.png
+    - assets/images/route_profile.png
+    - assets/svg/
+    - assets/svg/main_svg_logo.svg
+    - assets/svg/meta_logo.svg
+

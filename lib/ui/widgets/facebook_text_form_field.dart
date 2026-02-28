@@ -35,7 +35,7 @@ class _FacebookTextFormFieldState extends State<FacebookTextFormField> {
         fillColor: AppColors.textBg,
         filled: true,
         hintText: widget.hintText,
-        hintStyle: AppStyles.textFormStyle,
+        hintStyle: AppStyles.grey16Regular,
         suffixIcon: widget.isPassword
             ? IconButton(
                 onPressed: () {
@@ -49,23 +49,20 @@ class _FacebookTextFormFieldState extends State<FacebookTextFormField> {
                 ),
               )
             : SizedBox(),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: AppColors.red, width: 2),
-          gapPadding: 16,
-        ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: AppColors.grey),
-          gapPadding: 16,
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: AppColors.grey, width: 2),
-          gapPadding: 16,
-        ),
+        errorBorder: buildBorder(color: AppColors.red,thickness: 2),
+        border: buildBorder(color: AppColors.grey,thickness: 1),
+        focusedBorder: buildBorder(color: AppColors.grey,thickness: 2),
       ),
-      style: AppStyles.textFormStyle,
+      style: AppStyles.grey16Regular,
+    );
+  }
+  OutlineInputBorder buildBorder({required Color color, required double thickness}){
+    var width = MediaQuery.of(context).size.width;
+    double designWidth = 393;
+    return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(16),
+      borderSide: BorderSide(color: color, width: thickness),
+      gapPadding: (16/designWidth)*width,
     );
   }
 }
